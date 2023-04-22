@@ -2,3 +2,64 @@
 @use "./base/variables" as *;
 @use "./base/fonts";
 @use "/css/base/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Roboto&display=swap");
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/background1.png");
+}
+header {
+  height: 100vh;
+  background-image: url("../images/background2.png");
+  background-size: cover;
+  position: absolute;
+}
+main {
+  height: 200px;
+  background-color: var(--white);
+}
+header .topnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 170px;
+  padding-bottom: 60px;
+}
+
+header .topnav {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  color: $darkbrown;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 13px;
+}
+nav ul li a {
+  padding: 10px;
+  font-family: "Open Sans";
+  font-size: 22.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: $darkbrown;
+
+  text-decoration: none;
+  position: relative;
+}
